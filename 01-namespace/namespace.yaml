@@ -1,0 +1,18 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: dxc-namespace
+  labels:
+    name: dxc-namespace
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  namespace: dxc-namespace
+  labels:
+    name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx
