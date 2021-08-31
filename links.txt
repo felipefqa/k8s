@@ -44,6 +44,9 @@ kubectl delete --all
 
 -------------------------------------------
 02-namespace 
+kubectl get namespaces
+kubectl get po --show-labels
+kubectl get po -n default
 kubectl logs nginx-pod -f
 kubectl port-forward nginx-pod 8181:80
 -------------------------------------------
